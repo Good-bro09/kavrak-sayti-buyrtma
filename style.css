@@ -1,0 +1,79 @@
+/* Slider */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.slider img {
+  width: 200px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+.slider img:hover {
+  transform: scale(1.05);
+}
+
+/* Fikrlar formasi */
+#feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#feedback-form input,
+#feedback-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+#feedback-form button {
+  background-color: #00ffa6;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#feedbacks {
+  margin-top: 10px;
+}
+.feedback-item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+}
+
+/* Umumiy mobil uchun oson qilingan responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  form {
+    gap: 8px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .slider img {
+    width: 150px;
+  }
+
+  details summary {
+    font-size: 18px;
+  }
+}
